@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 8</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Inter", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f8f8f8;
+            margin: 0;
+        }
+
+        .container {
+            background: #efefef;
+            padding: 14px 33px 24px 21px;
+            border-radius: 12px;
+            width: 312px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .title {
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 16px;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 16px;
+        }
+
+        .card {
+            
+                background: #f6f6f6;
+                padding: 12px;
+                border-radius: 12px;
+                box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.08);
+                height: 93px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                width: 133px;
+            
+        }
+
+        .item-name {
+            font-size: 14px;
+            font-weight: 600;
+        }
+
+        .order-info {
+            font-size: 12px;
+            color: #666;
+            font-weight: 500;
+        }
+
+        .order-count {
+            font-weight: 700;
+            color: black;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="title">Popular Items</div>
+        <div class="grid">
+            <div class="card">
+                <div class="item-name">Double Chicken Burger + French fries</div>
+                <div class="order-info">Order: <span class="order-count">88</span></div>
+            </div>
+            <div class="card">
+                <div class="item-name">Mexican Burger</div>
+                <div class="order-info">Order: <span class="order-count">74</span></div>
+            </div>
+            <div class="card">
+                <div class="item-name">Double Cheese</div>
+                <div class="order-info">Order: <span class="order-count">56</span></div>
+            </div>
+            <div class="card">
+                <div class="item-name">Double Spicy Bean Burger</div>
+                <div class="order-info">Order: <span class="order-count">41</span></div>
+            </div>
+            <div class="card">
+                <div class="item-name">Potato Gems</div>
+                <div class="order-info">Order: <span class="order-count">38</span></div>
+            </div>
+            <div class="card">
+                <div class="item-name">Beer</div>
+                <div class="order-info">Order: <span class="order-count">32</span></div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

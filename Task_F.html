@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 6</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
+
+        body {
+            font-family: 'Inter', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+            margin: 0;
+        }
+
+        .button {
+            padding: 10px 20px;
+            background-color: red;
+            color: white;
+            font-size: 14px;
+            font-weight: 600;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            display: inline-block;
+        }
+
+        details {
+            position: relative;
+        }
+
+        .popup-content {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: white;
+            box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3);
+            padding: 15px;
+            border-radius: 10px;
+            width: 230px;
+            display: none;
+        }
+
+        details[open] .popup-content {
+            display: block;
+        }
+
+        .popup-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 8px;
+        }
+
+        .popup-header h2 {
+            font-size: 15px;
+            font-weight: 600;
+            margin: 0;
+            color: #333;
+        }
+
+        .close-btn {
+            width: 25px;
+            height: 25px;
+            display: flex
+        ;
+            align-items: center;
+            justify-content: center;
+            font-size: 15px;
+            font-weight: 500;
+            color: #201e1e;
+            background-color: hsl(0deg 0% 100%);
+            border-radius: 54%;
+            box-shadow: 3px 10px 23px rgba(0, 0, 0, 0.4);
+        }
+
+        .popup-content p {
+            font-size: 11px;
+            color: #555;
+            margin: 4px 0 10px;
+            font-weight: 400;
+        }
+
+        .item-box {
+            background-color: white;
+            padding: 8px;
+            border-radius: 6px;
+            margin: 8px 0;
+            font-size: 12px;
+            border: 1.4px grey solid;
+        }
+
+        .item-box strong {
+            font-size: 14px;
+            font-weight: 600;
+            color: #333;
+        }
+
+        .cancel-btn {
+            width: 100%;
+            padding: 10px;
+            background-color: #eb2626;
+            color: white;
+            border: none;
+            border-radius: 20px;
+            font-size: 13px;
+            font-weight: 500;
+            cursor: pointer;
+            margin-top: 8px;
+        }
+    </style>
+</head>
+<body>
+
+    <details>
+        <summary class="button">CLICK HERE</summary>
+        <div class="popup-content">
+            <div class="popup-header">
+                <h2>Cancel Item</h2>
+                <span class="close-btn">×</span>
+            </div>
+            <p>Are you sure to cancel this item?</p>
+            <div class="item-box">
+                <strong>Tasty Burger</strong>
+                <p>Size: Small, Cheese: A little bit, Salt: No</p>
+            </div>
+            <button class="cancel-btn">Cancel Items</button>
+        </div>
+    </details>
+
+</body>
+</html>
